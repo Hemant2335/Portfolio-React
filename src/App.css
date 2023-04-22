@@ -1,38 +1,189 @@
-.App {
+/* MAIN AREA ANIMATION STARTS */
+
+@font-face {
+  font-family: 'CabinetGrotesk-Variable';
+  src: url('./fonts/CabinetGrotesk-Variable.woff2') format('woff2');
+       font-weight: 100 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+.this{
+  background-color: #210011;
+  margin: 0;
+  padding: 0;
+
+}
+h1{
+  font-size: 15vh;
+  color: #654670;
+  margin: 0;
+}
+h2{
+  color: #916B6E;
+  font-size: 10vh;
+  margin: 0;
+}
+
+.textd{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
   text-align: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  font-weight: bold;
+  color: #BE958A;
+}
+p{
+  margin: 2vh;
+}
+.protxt{
+  font-weight: 500;
+  color:#916B6E
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.maincont
+{
+  display: flex;
+
+  margin-top: 5vw;
+  color: #BE958A;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 2.5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn
+{
+  border: 0;
+  border-radius: 5px;
+  color:  #BE958A;
+  font-family: "CabinetGrotesk-Variable";
+  letter-spacing: 2px;
+  background-color: #4F132F;
+  font-size: 2vh;
+  margin-right: 2vh;
+  font-weight: bolder;
+  padding: 0.7vh;
+}
+.op{
+  background-color: #210011;
+
+}
+
+.btndiv{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2vh;
+}
+.btndi{
+  display: flex;
+}
+
+
+
+
+/* ANIMATION OF THE LAYERS (PARALLAX EFFECT) */
+
+.animation, .animation_layer {
+	height: 1140px;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1250px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+
+#Background{
+  position: relative;
+  background-image: url("./images/Original.png");
+}
+
+#Man_Cave{
+  background-image: url("./images/FirstMount.png");
+  position: relative;
+
+}
+
+#Stone{
+  background-image: url("./images/ManMOuntain.png");
+  position: relative;
+}
+
+#second{
+  background-image: url("./images/SecondMount.png");
+  position: relative;
+}
+
+
+/* card styling */
+
+.projc{
+  display: flex;
+  justify-content: space-around;
+  margin: 10vh;
+}
+
+.p1{
+  background-color: #4F132F;
+  height: 35vh;
+  width: 50vh;
+  border-radius: 9px;
+}
+
+.con{
+  height: 20vh;
+  background-color: #4F132F;
+  width: 50vh;
+  border-radius: 9px;
+  margin: 2vh;
+}
+
+.Contact{
+  display: flex;
+  margin: 2vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+footer{
+  margin: 2vh;
+  height: 12vh;
+  background-color:#210011;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #916B6E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social{
+  margin: 4.5vh;
 }
+
+a{
+  margin: 2vh;
+}
+
+img{
+  height: 5vh;
+}
+
